@@ -13,6 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .navbar {
@@ -35,11 +36,23 @@ body {
 
 .hero-img {
   width: 100%;
-  max-width: 610px;
+  max-width: 375px;
 }
 
 .hero-title {
   display: none;
+}
+
+.section-title {
+  width: 100%;
+}
+
+.contact-info {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  gap: inherit;
 }
 
 div#hero {
@@ -64,4 +77,90 @@ section#contact {
 section#my-philosophy img {
   width: 100%;
   max-width: 320px;
+}
+
+.philosophy-top,
+.philosophy-bottom,
+.philosophy-text {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  gap: inherit;
+  margin-bottom: inherit;
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #logo {
+    position: absolute;
+    top: 5px;
+    left: 75px;
+  }
+
+  .section-title {
+    margin-top: 7.5rem;
+  }
+
+  .navbar {
+    width: 30%;
+    padding-inline: 4rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+  }
+
+  .philosophy-top {
+    flex-direction: row;
+  }
+
+  .philosophy-bottom {
+    flex-direction: row-reverse;
+  }
+
+  .philosophy-text {
+    flex-direction: column;
+    height: 100%;
+    justify-content: stretch;
+  }
+
+  .philosophy-bottom .philosophy-text {
+    margin-inline: 5rem;
+  }
+
+  .contact-info {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  section#my-philosophy,
+  section#my-results,
+  section#contact {
+    margin-inline: 5rem;
+  }
+
+  section#my-philosophy .philosophy-top img {
+    width: 100%;
+    max-width: unset;
+  }
+
+  section#my-philosophy .philosophy-bottom img {
+    width: 80%;
+    max-width: unset;
+  }
+
+  .results-text {
+    width: 900px;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
 }

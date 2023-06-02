@@ -33,26 +33,47 @@
   position: absolute;
   border: 2px solid var(--white);
   transition: all 0.1s ease-in-out;
+  width: 250px;
 }
 
 .philosophy-graphs img:nth-child(1) {
   top: 0;
   left: -5%;
-  width: 250px;
 }
 
 .philosophy-graphs img:nth-child(2) {
   top: 25%;
   right: -5%;
-  width: 250px;
 }
 
 .philosophy-graphs img:nth-child(3) {
   bottom: 0;
   left: 0;
-  width: 250px;
 }
 
 .philosophy-graphs img:hover {
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 992px) {
+  .philosophy-graphs {
+    height: 600px;
+    width: 60vw;
+  }
+
+  .philosophy-graphs img {
+    width: 550px;
+  }
+
+  .philosophy-graphs img:nth-child(1) {
+    left: 0;
+  }
+
+  .philosophy-graphs img:nth-child(2) {
+    right: 0;
+  }
+
+  .philosophy-graphs img:nth-child(3) {
+    left: 5%;
+  }
 }

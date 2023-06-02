@@ -23,6 +23,12 @@ html {
   text-shadow: 0 0 5px var(--white);
 }
 
+.hero-title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--white);
+}
+
 p {
   font-size: 20px;
   font-weight: 400;
@@ -70,4 +76,27 @@ h3.section-subtitle {
   font-size: 25px;
   font-weight: 400;
   color: var(--white);
+}
+
+.catchphrase {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+@media screen and (min-width: 992px) {
+  .section-title {
+    font-size: 60px;
+  }
+
+  h2.section-subtitle,
+  .contact-link {
+    font-size: 27.5px;
+  }
+
+  h3.section-subtitle {
+    font-size: 35px;
+  }
 }
