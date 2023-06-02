@@ -1,0 +1,45 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --violet: #9747ff;
+}
+
+html {
+  background-color: var(--black);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  width: fit-content;
+  padding-inline: 2.5rem;
+  border-bottom: 1px solid var(--white);
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 610px;
+}
+
+section#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
