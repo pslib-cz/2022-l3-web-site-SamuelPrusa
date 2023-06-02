@@ -19,6 +19,7 @@ body {
   width: fit-content;
   padding-inline: 2.5rem;
   border-bottom: 1px solid var(--white);
+  margin-bottom: 2.5rem;
 }
 
 .nav-items {
@@ -37,9 +38,28 @@ body {
   max-width: 610px;
 }
 
-section#hero {
+.hero-title {
+  display: none;
+}
+
+div#hero {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+section#my-philosophy,
+section#my-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2.5rem;
+}
+
+section#my-philosophy img {
+  width: 100%;
+  max-width: 320px;
 }
