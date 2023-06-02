@@ -44,6 +44,7 @@ p.extra-black {
 .section-title {
   font-size: 45px;
   font-weight: 700;
+  text-align: center;
 }
 
 .btn {
@@ -51,4 +52,22 @@ p.extra-black {
   font-weight: 400;
   color: var(--white);
   text-decoration: none;
+}
+
+h2.section-subtitle {
+  font-size: 45px;
+  font-weight: 300;
+  margin: 0 0 0.5rem 0;
+}
+
+h3.section-subtitle {
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0 0 0.5rem 0;
+}
+
+.contact-link {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--white);
 }

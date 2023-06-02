@@ -50,13 +50,15 @@ div#hero {
 }
 
 section#my-philosophy,
-section#my-results {
+section#my-results,
+section#contact {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  padding: 2.5rem;
+  margin-inline: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 section#my-philosophy img {
